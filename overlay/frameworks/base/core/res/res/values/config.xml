@@ -688,12 +688,6 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 
-    <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
-    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
-
-    <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
-    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
-
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
@@ -710,14 +704,6 @@
     <string-array translatable="false" name="config_tether_usb_regexs">
         <item>"usb\\d"</item>
         <item>"rndis\\d"</item>
-    </string-array>
-
-    <!-- List of regexpressions describing the interface (if any) that represent tetherable
-         Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
-         should be empty.  An example would be "softap.*" -->
-    <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"softap0"</item>
-        <item>"wlan0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
@@ -822,16 +808,6 @@
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
     <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
-
-    <!-- Boolean indicating whether the wifi chipset has background scan support -->
-    <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
-
-    <!-- Wifi driver supports batched scan -->
-    <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
-
-    <!-- Configure wifi tcp buffersizes in the form:
-         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,5505024,262144,524288,5505024</string>
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
@@ -1093,9 +1069,6 @@
 
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
-
-    <!-- True if the firmware supports connected MAC randomization -->
-    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 
     <!-- Shows the required view for in-display fingerprint -->
     <bool name="config_supportsInDisplayFingerprint">true</bool>
