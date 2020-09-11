@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 #GApps
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -31,16 +31,10 @@ IS_PHONE := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Device identifier
-PRODUCT_NAME := derp_cepheus
+PRODUCT_NAME := fluid_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Inherit from custom vendor
-$(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
-
-# Include firmware
-$(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)

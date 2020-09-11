@@ -18,12 +18,16 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/cepheus
 
+# Android = broken af
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_USES_NETWORK := true
+BOARD_VENDOR := xiaomi
 
 # Inherit from proprietary files
 include vendor/xiaomi/cepheus/BoardConfigVendor.mk
-include vendor/miuicamera/common/BoardConfigVendor.mk
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -59,7 +63,6 @@ AUDIO_FEATURE_ENABLED_PCM_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_PCM_OFFLOAD_24 := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 
-USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -121,6 +124,7 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += loop.max_part=16
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Media
 TARGET_USES_ION := true
@@ -184,6 +188,10 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
+BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
