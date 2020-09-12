@@ -283,6 +283,12 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3-service.xiaomi_msmnile
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/power/config/msmnile/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
