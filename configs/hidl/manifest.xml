@@ -320,6 +320,7 @@
         </interface>
         <fqname>@1.0::IOffloadControl/default</fqname>
     </hal>
+    <!--
     <hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
@@ -340,6 +341,7 @@
         </interface>
         <fqname>@1.0::IUsb/default</fqname>
     </hal>
+    -->
     <hal format="hidl">
         <name>android.hardware.vibrator</name>
         <transport>hwbinder</transport>
@@ -350,6 +352,7 @@
         </interface>
         <fqname>@1.2::IVibrator/default</fqname>
     </hal>
+    <!--
     <hal format="hidl">
         <name>android.hardware.wifi</name>
         <transport>hwbinder</transport>
@@ -379,7 +382,7 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.2::ISupplicant/default</fqname>
-    </hal>
+    </hal>-->
     <hal format="hidl">
         <name>com.qualcomm.qti.ant</name>
         <transport>hwbinder</transport>
