@@ -19,9 +19,6 @@
     <string name="wake_gesture_title">Wake up</string>
     <string name="wake_gesture_summary">Wake up the device instead of pulsing notifications</string>
 
-     <!-- FPS Counter -->
-    <string name="fps_info_title">FPS Counter</string>
-
     <!-- DC dimming settings -->
     <string name="dc_dimming_enable_title">DC Dimming</string>
     <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
