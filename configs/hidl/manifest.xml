@@ -42,7 +42,7 @@
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>2.3</version>
         <interface>
             <name>IBluetoothAudioProvidersFactory</name>
             <instance>default</instance>
@@ -303,12 +303,12 @@
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>2.3</version>
         <interface>
             <name>ISoundTriggerHw</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.1::ISoundTriggerHw/default</fqname>
+        <fqname>@2.3::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
@@ -330,7 +330,6 @@
         </interface>
         <fqname>@1.0::IOffloadControl/default</fqname>
     </hal>
-    <!--
     <hal format="hidl">
         <name>android.hardware.thermal</name>
         <transport>hwbinder</transport>
@@ -340,7 +339,8 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IThermal/default</fqname>
-    </hal>
+    </hal>    
+    <!--
     <hal format="hidl">
         <name>android.hardware.usb</name>
         <transport>hwbinder</transport>
