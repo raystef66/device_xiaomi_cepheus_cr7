@@ -1,7 +1,7 @@
 allow hal_power_default proc_sched_energy_aware:file { write open };
 allow hal_power_default sysfs:file { read open write getattr };
 allow hal_power_default sysfs_devices_system_cpu:file { write };
-#allow hal_power_default sysfs_devfreq:dir { search write };
+allow hal_power_default sysfs_devfreq:dir { search write };
 allow hal_power_default sysfs_devfreq:file { read write open };
 allow hal_power_default sysfs_kgsl:file { read write open };
 allow hal_power_default sysfs_kgsl:lnk_file { read };
