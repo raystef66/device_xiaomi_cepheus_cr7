@@ -23,13 +23,7 @@ $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common Fluid stuff.
 $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
-$(call inherit-product, vendor/gms/gms_full.mk)
-
-#GApps
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-TARGET_INCLUDE_STOCK_ARCORE := true
+$(call inherit-product, device/xiaomi/cepheus/fluid_config.mk)
 
 # Device identifier
 PRODUCT_NAME := fluid_cepheus
