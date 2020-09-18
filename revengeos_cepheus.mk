@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Inherit some common Fluid stuff.
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
-$(call inherit-product, device/xiaomi/cepheus/fluid_config.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, device/xiaomi/cepheus/revengeos_config.mk)
 
 # Device identifier
-PRODUCT_NAME := fluid_cepheus
+PRODUCT_NAME := revengeos_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
