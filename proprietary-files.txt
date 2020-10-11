@@ -181,6 +181,7 @@ vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_preview_deflicker.so
 vendor/lib64/libarcsoft_supernight.so
 vendor/lib64/libc++_shared.so
+vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamxfdalgov7.so
 vendor/lib64/libcamxfdalgov8.so
@@ -193,6 +194,7 @@ vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libFaceGrade.so
 vendor/lib64/libft2vendor.so
 vendor/lib64/libHalSuperSensorServer.so
+vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libmegface.so
 vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libmialgo_basic.so|abeba4f8d760c83a72fb8bbc403ecf8f7a9fef0d
@@ -741,19 +743,13 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 
-# Neural-networks | Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|945d2762421171d7d4498e862435d869e55cd77d
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
-vendor/lib64/libhexagon_nn_stub.so|0e1f7a2d2c690865dc5bbbcf751dd07b2a1a7f0d
-vendor/lib/libcamera_nn_stub.so|e70adb7aa1ed248a27ba89a71e7ec52495ede036
-vendor/lib64/libcamera_nn_stub.so|020a6cd6cee8e550f87cf39c1496979139a31961
-vendor/lib/unnhal-acc-hta.so|f7050cd7c567a7db1f95f0c6e42a4997d66085f5
-vendor/lib64/unnhal-acc-hta.so|757223eadb2d3ed3088bb15d2e7a5477593fa921
-vendor/lib64/unnhal-acc-hvx.so|f0030e90955152c432908520b2abf2dbd6d8bac3
-vendor/lib64/unnhal-acc-adreno.so|b443183a74e88b6522dc60e50e1cd1affc163eba
-vendor/lib64/unnhal-acc-common.so|5bfcf90ce2136108828c8c56bd2224c1033991aa
-vendor/lib/libofflinelog.so|dbfe003f564be9892adaec59ccbb95be4c9c78de
-vendor/lib64/libofflinelog.so|2b2090848f738fa575335edc6d7fe92df9f2062d
+# Neural-networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc
+vendor/lib64/unnhal-acc-adreno.so
+vendor/lib64/unnhal-acc-common.so
+vendor/lib64/unnhal-acc-hta.so
+vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
 vendor/lib/libsn100u_fw.so
