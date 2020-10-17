@@ -215,25 +215,15 @@
             "Type":"SKIN",
             "HotThreshold":[
                 "NAN",
-                47.0,
-                49.0,
-                52.0,
-                54.0,
-                56.0,
-                58.0
-            ],
-            "HotHysteresis":[
-                0.0,
-                2.0,
-                2.0,
-                2.0,
-                2.0,
-                2.0,
-                2.0
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN"
             ],
             "VrThreshold":"NAN",
             "Multiplier":0.001,
-            "Monitor":true
         },
         {
             "Name":"battery",
@@ -245,7 +235,7 @@
                 "NAN",
                 "NAN",
                 "NAN",
-                60.0
+                "NAN"
             ],
             "VrThreshold":"NAN",
             "Multiplier":0.001
