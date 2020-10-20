@@ -199,15 +199,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "EnergyAware",
-      "Path": "/proc/sys/kernel/sched_energy_aware",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
