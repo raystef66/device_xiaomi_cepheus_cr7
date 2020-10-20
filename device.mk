@@ -344,7 +344,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power.stats@1.0-service.xiaomi
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/power/config/msmnile/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+    $(LOCAL_PATH)/configs/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
