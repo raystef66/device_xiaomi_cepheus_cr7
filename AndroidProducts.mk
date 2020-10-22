@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_cepheus.mk
+    $(LOCAL_DIR)/lineage_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_cepheus-user \
-    revengeos_cepheus-userdebug \
-    revengeos_cepheus-eng
+    lineage_cepheus-user \
+    lineage_cepheus-userdebug \
+    lineage_cepheus-eng
