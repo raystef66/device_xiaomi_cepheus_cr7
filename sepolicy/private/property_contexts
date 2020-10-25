@@ -2,3 +2,5 @@ ro.boot.hwc                    u:object_r:exported_default_prop:s0
 ro.boot.hwversion              u:object_r:exported_default_prop:s0
 ro.product.mod_device          u:object_r:exported2_default_prop:s0
 ro.product.system.manufacturer u:object_r:exported2_default_prop:s0 exact string
+
+persist.vendor.setWFDInfo.R2             u:object_r:wfd_sys_debug_prop:s0

@@ -1,0 +1,30 @@
+<!--
+    Input:
+        manifest.xml
+        manifest.xml
+        manifest.xml
+        manifest.xml
+-->
+<manifest version="1.0" type="device" target-level="3">
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wifidisplaysession</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IWifiDisplaySession</name>
+            <instance>wifidisplaysession</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionVideoTrack</name>
+            <instance>wifidisplaysessionvideotrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionAudioTrack</name>
+            <instance>wifidisplaysessionaudiotrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionImageTrack</name>
+            <instance>wifidisplaysessionimagetrack</instance>
+        </interface>
+    </hal>
+</manifest>
