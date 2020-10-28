@@ -23,5 +23,8 @@
 
     <!-- FOD recognizing animation -->
     <dimen name="fod_animation_size">300.0px</dimen>
+
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
 </resources>
 
