@@ -84,5 +84,9 @@ persist.sys.cust.lte_config=true
 persist.radio.VT_ENABLE=1
 persist.radio.volte.dan_support=true
 
+# Strict Mode
+persist.sys.strictmode.visual=0
+persist.sys.strictmode.disable=1
+
 # WiFi
 wifi.interface=wlan0
