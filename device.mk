@@ -350,6 +350,10 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Recorder
+PRODUCT_PACKAGES += \
+    OPScreenRecorder
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
