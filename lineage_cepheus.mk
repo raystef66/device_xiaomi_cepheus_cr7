@@ -37,3 +37,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Extra FOD stuff
 TARGET_HAS_FOD := true
+EXTRA_FOD_ANIMATIONS := true
