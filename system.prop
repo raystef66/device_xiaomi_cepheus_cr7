@@ -60,6 +60,9 @@ ro.netflix.bsp_rev=Q855-16947-1
 # NFC DT
 ro.nfc.port=I2C
 
+# OpenGL
+debug.hwui.renderer=skiagl
+
 # Product
 ro.product.mod_device=cepheus_eea_global
 
