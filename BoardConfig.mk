@@ -156,6 +156,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
+QCOM_BOARD_PLATFORMS += sm8150
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
