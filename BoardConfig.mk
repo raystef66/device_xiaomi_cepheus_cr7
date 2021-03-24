@@ -185,12 +185,7 @@ VENDOR_SECURITY_PATCH := 2021-01-01
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sepolicy
-TARGET_SEPOLICY_DIR := msmnile
-include device/qcom/sepolicy/sepolicy.mk
-
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/temp
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
