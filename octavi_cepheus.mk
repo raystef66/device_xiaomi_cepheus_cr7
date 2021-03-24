@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common octavi stuff.
+$(call inherit-product, vendor/octavi/config/common.mk)
 $(call inherit-product, device/xiaomi/cepheus/lineage_config.mk)
-$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -27,14 +26,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
 # Device identifier
-PRODUCT_NAME := lineage_cepheus
+PRODUCT_NAME := octavi_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Extra FOD stuff
-TARGET_HAS_FOD := true
-EXTRA_FOD_ANIMATIONS := true
