@@ -36,3 +36,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Include firmware
 $(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
+
+# Extra FOD stuff
+TARGET_HAS_FOD := true
