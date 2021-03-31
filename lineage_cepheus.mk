@@ -39,3 +39,4 @@ $(call inherit-product, vendor/xiaomi/firmware/cepheus/firmware.mk)
 
 # Extra FOD stuff
 TARGET_HAS_FOD := true
+EXTRA_FOD_ANIMATIONS := true
