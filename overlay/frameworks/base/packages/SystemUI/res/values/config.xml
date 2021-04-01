@@ -43,4 +43,8 @@
     <dimen name="config_rounded_mask_size">130px</dimen>
     <dimen name="config_rounded_mask_size_top">120px</dimen>
     <dimen name="config_rounded_mask_size_bottom">130px</dimen>
+
+    <!-- FPSInfoService FPS node file path -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps</string>
+
 </resources>
